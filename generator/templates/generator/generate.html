@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class="container text-center">
+<h1> lottery generator!<br>complex->bigger reward<p></h1>
+
+
+<form action="{% url 'lottery' %}">
+
+    <select name="len">
+    <option value="6"> length 6</option>
+    <option value="7"> length 7</option>
+    <option value="8"> length 8</option>
+    <option value="9"> length 9</option>
+    <option value="10">length 10</option>
+    <option value="11" selected="selected">length 11</option>
+    <option value="12">length 12</option>
+    </select>
+    <br>
+    <input type="checkbox" name="upper">lowercase & UPPERCASE LETTER
+    <br>
+    <input type="checkbox" name="num">lowercase & Numbers
+    <br>
+    <input type="checkbox" name="spc_chars">lowercase & Special characters
+    <br>
+    <input type="submit" value="Generate lottery no." class="btn btn-primary">
+    </div>
+
+
+</form>
